@@ -494,6 +494,8 @@ footer .social-icons a {
     flex-direction: column;
     align-items: center;
     padding: 5px 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
   }
 
   .logo img {
@@ -523,12 +525,21 @@ footer .social-icons a {
     padding: 5px 8px;
   }
 
-  /* Hero section height further reduced */
+  /* Add clear separation below navbar */
+  .nav-flex {
+    margin-bottom: 10px;
+  }
+
+  /* Hero section height further reduced and padding adjusted */
   .hero-section {
-    height: 45vh;
-    padding: 15px 10px;
+    height: 42vh;
+    padding: 20px 10px;
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
 
   .hero-section h1 {
