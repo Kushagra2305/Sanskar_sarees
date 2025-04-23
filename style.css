@@ -489,46 +489,66 @@ footer .social-icons a {
 /* Final Mobile Optimization for Sanskar Sarees */
 @media (max-width: 768px) {
 
-  /* Navbar layout change */
-  .nav-flex {
-    flex-direction: column;
-    align-items: center;
-    padding: 5px 10px;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-  }
+/* Sticky navbar container */
+.nav-flex {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+  padding: 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 999;
+}
 
-  .logo img {
-    height: 50px;
-  }
+/* Logo and brand name in a row */
+.nav-top {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Spacing between logo and brand name */
+  margin-bottom: 1px; /* Spacing below logo row */
+}
 
-  .brand-name {
-    font-size: 18px;
-    margin: 5px 0;
-  }
+.logo img {
+  height: 26px; /* Adjust height of the logo */
+}
 
-  nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
-    margin: 5px 0 0 0;
-    padding: 0;
-  }
+.brand-name {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
 
-  nav ul li {
-    margin: 0;
-  }
+/* Menu items in a horizontal line, aligned to start */
+nav {
+  width: 100%;
+}
 
-  nav ul li a {
-    font-size: 12px;
-    padding: 5px 8px;
-  }
+nav ul {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 9px; /* Spacing between menu items */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-  /* Add clear separation below navbar */
-  .nav-flex {
-    margin-bottom: 10px;
-  }
+nav ul li {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  font-size: 10px;
+  padding: 2px 4px;
+  text-decoration: none;
+  color: #333;
+  display: block;
+  line-height: 1;
+}
 
   /* Hero section height further reduced and padding adjusted */
   .hero-section {
@@ -628,7 +648,7 @@ footer .social-icons a {
   }
 
   .gallery-section h2 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .gallery {
