@@ -486,111 +486,122 @@ footer .social-icons a {
     font-weight: bold;
 }
 
-/* Mobile Responsiveness - Fixed Hero Image and Natural Navbar */
+/* Mobile Responsiveness */
 
+/* Tablets and Below (≤ 768px) */
 @media (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-
   .nav-flex {
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 6px 10px;
-    gap: 6px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    height: auto;
   }
 
   nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 6px;
-    padding: 0;
-    margin: 0;
-  }
-
-  nav ul li {
-    list-style: none;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    margin-top: 10px;
   }
 
   nav ul li a {
-    font-size: 11px;
-    padding: 5px 8px;
-    white-space: nowrap;
-  }
-
-  .logo img {
-    height: 42px;
-  }
-
-  .brand-name {
     font-size: 16px;
   }
 
-  .hero-section {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: auto;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    aspect-ratio: 16 / 9;
-  }
-
   .hero-section h1 {
-    font-size: 24px;
-    margin: 5px 0;
+    font-size: 40px;
   }
 
   .hero-section p {
-    font-size: 13px;
-    margin: 5px 8px;
+    font-size: 18px;
   }
 
-  .btn-primary,
-  .insta-btn {
-    padding: 7px 14px;
-    font-size: 11px;
+  .featured-section {
+    padding: 30px 10px;
+  }
+
+  .category-buttons {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .product-box {
+    width: 45%;
+  }
+
+  .testimonial-slider {
+    padding: 20px 10px;
   }
 }
 
+/* Mobiles (≤ 480px) */
 @media (max-width: 480px) {
-  .nav-flex {
-    gap: 5px;
-  }
-
-  nav ul {
-    gap: 4.5px;
-  }
-
-  nav ul li a {
-    font-size: 10px;
-    padding: 4px 6px;
-  }
-
   .logo img {
-    height: 38px;
+    height: 60px;
   }
 
   .brand-name {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .hero-section {
-    aspect-ratio: 16 / 9;
-    height: auto;
+    padding: 80px 15px;
   }
 
   .hero-section h1 {
-    font-size: 22px;
+    font-size: 32px;
   }
 
   .hero-section p {
-    font-size: 11.5px;
+    font-size: 16px;
+  }
+
+  .btn-primary {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .about-section h2 {
+    font-size: 28px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .category-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .product-box {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .image-scroller img {
+    width: 250px;
+  }
+
+  .insta-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .store-address {
+    font-size: 16px;
+  }
+
+  .testimonial p {
+    font-size: 1rem;
+  }
+
+  .testimonial-controls button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .contact-section h2 {
+    font-size: 26px;
   }
 }
