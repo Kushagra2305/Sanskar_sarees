@@ -486,31 +486,31 @@ footer .social-icons a {
     font-weight: bold;
 }
 
-/* Full mobile CSS reset and optimization */
+/* Final Mobile Optimization for Sanskar Sarees */
 @media (max-width: 768px) {
 
-  /* Navbar fixes */
+  /* Navbar layout change */
   .nav-flex {
-    height: auto;
+    flex-direction: column;
+    align-items: center;
     padding: 5px 10px;
-    flex-wrap: nowrap;
-    justify-content: space-between;
   }
 
   .logo img {
-    height: 55px;
+    height: 50px;
   }
 
   .brand-name {
     font-size: 18px;
-    margin-left: 8px;
+    margin: 5px 0;
   }
 
   nav ul {
     display: flex;
-    flex-wrap: nowrap;
-    gap: 10px;
-    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin: 5px 0 0 0;
     padding: 0;
   }
 
@@ -519,108 +519,109 @@ footer .social-icons a {
   }
 
   nav ul li a {
-    font-size: 13px;
-    padding: 6px 8px;
+    font-size: 12px;
+    padding: 5px 8px;
   }
 
-  /* Hero section adjustments */
+  /* Hero section height further reduced */
   .hero-section {
-    height: 60vh;
-    padding: 20px 10px;
+    height: 45vh;
+    padding: 15px 10px;
     background-size: cover;
+    background-position: center;
   }
 
   .hero-section h1 {
-    font-size: 28px;
+    font-size: 24px;
+    margin-bottom: 10px;
   }
 
   .hero-section p {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   /* About section adjustments */
   .about-section {
-    padding: 30px 12px;
+    padding: 25px 10px;
   }
 
   .about-section h2 {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .about-section p {
-    font-size: 14px;
+    font-size: 13px;
   }
 
-  /* Featured section */
+  /* Featured section adjustments */
   .featured-section {
-    padding: 30px 12px;
+    padding: 25px 10px;
   }
 
-  /* Testimonials section adjustments */
+  /* Testimonials section fixed */
   .testimonials-section {
-    padding: 30px 12px;
+    padding: 25px 10px;
   }
 
   .testimonial-slider {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 160px;
+    min-height: 140px;
     overflow: hidden;
   }
 
   .testimonial {
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
     padding: 10px;
     width: 100%;
-    box-sizing: border-box;
   }
 
   .testimonial-controls {
-    margin-top: 12px;
+    margin-top: 10px;
   }
 
   .testimonial-controls button {
-    padding: 6px 12px;
-    font-size: 13px;
+    padding: 5px 10px;
+    font-size: 12px;
     margin: 0 4px;
   }
 
   /* Contact section adjustments */
   .contact-section {
-    padding: 30px 12px;
+    padding: 25px 10px;
   }
 
   .contact-section h2 {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .contact-section p {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   /* Footer adjustments */
   footer {
-    padding: 12px 0;
+    padding: 10px 0;
     text-align: center;
   }
 
   footer p {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   /* Gallery adjustments */
   .gallery-section {
-    padding: 30px 12px;
+    padding: 25px 10px;
   }
 
   .gallery-section h2 {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .gallery {
-    gap: 10px;
+    gap: 8px;
   }
 
   .gallery img {
